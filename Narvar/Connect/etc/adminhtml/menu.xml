@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Narvar Connect Admin Menu Configuration
+ *
+ * @category    Narvar
+ * @package     Narvar_Connect
+ *
+ * @author      premkumarsankar premkumar.sankar@aspiresys.com
+ * @copyright   Copyright (c) 2012-2019 Narvar Inc
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Narvar_Connect::narvar_connect"
+             title="Narvar Connect"
+             module="Narvar_Connect"
+             sortOrder="60"
+             resource="Narvar_Connect::narvar_connect" />
+             
+        <add id="Narvar_Connect::audit_log"
+              title="Manage Audit Log"
+              module="Narvar_Connect"
+              sortOrder="10" 
+              action="narvar_connect/audit_log"
+              parent="Narvar_Connect::narvar_connect"
+              resource="Narvar_Connect::narvar_connect" />
+                 
+		<add id="Narvar_Connect::narvar_connect_config"
+              title="Narvar Configuration"
+              module="Narvar_Connect"
+              sortOrder="20" 
+              action="adminhtml/system_config/edit/section/narvar_connect/"
+              parent="Narvar_Connect::narvar_connect"
+              resource="Narvar_Connect::narvar_connect" />
+    </menu>
+</config>

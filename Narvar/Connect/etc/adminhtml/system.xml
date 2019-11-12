@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Narvar Connect Admin System Configuration
+ *
+ * @category    Narvar
+ * @package     Narvar_Connect
+ *
+ * @author      premkumarsankar premkumar.sankar@aspiresys.com
+ * @copyright   Copyright (c) 2012-2019 Narvar Inc
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="narvar" translate="label" sortOrder="999">
+            <label>Narvar Connect</label>
+        </tab>
+        <section id="narvar_connect" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Narvar Connect Configuration</label>
+            <tab>narvar</tab>
+            <resource>Narvar_Connect::config</resource>
+            <group id="current_version" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Current Version Installed</label>
+                <field id="version" translate="label" type="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Current Version</label>
+                    <backend_model>Narvar\Connect\Model\Config\Version</backend_model>
+                </field>
+            </group>
+            <group id="account" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Narvar Connect Configuration</label>              
+                <field id="narvar_api_endpoint" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Narvar API Endpoint</label>
+                    <validate>required-entry validate-url</validate>
+                    <comment>Narvar API Endpoint Cofigured Here. Make sure that URL ends with '/' (slash).</comment>
+                </field>               
+                <field id="narvar_acc_id" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Narvar Account ID </label>
+                    <validate>required-entry</validate>
+                    <comment>Narvar Account ID Shared By Narvar</comment>
+                </field> 
+               <field id="narvar_auth_token" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Narvar Auth Token</label>
+                    <validate>required-entry</validate>
+                    <comment>Narvar Auth Token Shared By Narvar</comment>
+                </field>
+                <field id="narvar_store_brand" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Narvar Store Brand</label>
+                    <validate>required-entry</validate>
+                </field>
+            </group>
+            <group id="batch" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Batch Process Configuration</label>
+                <field id="bulk_push_frequency" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Frequency of Bulk Failure Push</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Batch\Frequency</source_model>
+                    <validate>required-entry</validate>
+                    <comment>Frequency of bulk failure push to Narvar</comment>
+                </field>
+                <field id="bulk_push_time" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Failure Push process start time</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Batch\Time</source_model>
+                    <validate>required-entry</validate>
+                    <comment>Time of the day then Failure Push process is started (hour) </comment>
+                    <depends>
+                        <field id="bulk_push_frequency">24</field>
+                    </depends>
+                </field>
+            </group>
+            <group id="clean_up" translate="label" type="text" sortOrder="25" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Clean Up Process Configuration</label>
+                <field id="audit_cleanup_interval" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Keep Audit Log</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Batch\Audit\Interval</source_model>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="clean_up_time" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Clean Up process start time</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Batch\Time</source_model>
+                    <validate>required-entry</validate>
+                    <comment>Time of the day then clean up process is started (hour) </comment>
+                    <depends>
+                        <field id="audit_cleanup_interval" negative="1">0</field>
+                    </depends>
+                </field>
+            </group>
+            <group id="return" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Order Returns Configuration</label>
+                <field id="return_email" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Email - Return Request</label>
+                    <validate>required-entry validate-email</validate>
+                    <comment>Return Request Email</comment>
+                </field>   
+                <field id="auth_key" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Return Authentication Key For Narvar</label>
+                    <validate>required-entry</validate>
+                    <comment>Return Authentication Key For Narvar</comment>
+                </field>   
+                <field id="auth_key_encrypt" translate="label" type="hidden" sortOrder="30" showInDefault="0" showInWebsite="0" showInStore="0">
+                </field> 
+                <field id="auth_token" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Return Authentication Token For Narvar</label>
+                    <frontend_model>Narvar\Connect\Block\Adminhtml\System\Config\Form\Renderer\Auth\Token</frontend_model>
+                    <comment>Return Authentication Token For Narvar</comment>
+                </field>
+            </group>
+            <group id="batch_initial" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Historical Data Synchronization Configuration</label>
+                <field id="batch_initial_period" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Synchronization Period</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Batch\Init\Interval</source_model>
+                    <frontend_model>Narvar\Connect\Block\Adminhtml\System\Config\Form\Renderer\BatchInitial\Period</frontend_model>
+                    <validate>validate-select</validate>
+                    <comment>Important: To use historical data synchronization, please make sure the Magento cronjob has been set up</comment>
+                </field>
+            </group>
+            <group id="custom_attributes" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Custom Attributes</label>
+                <field id="configurable_product_option" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Configurable product option</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\ConfigurableProduct</source_model>
+                    <comment>Choose the data source for: categories, images, description</comment>
+                </field>
+                <field id="notification_pref" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Notification Preference</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Attributes\Customer</source_model>                  
+                    <comment>Notification Preference</comment>
+                </field>
+               <field id="is_backordered" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Is back Ordered</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Attributes\Boolean</source_model>                  
+                    <comment>Is back Ordered</comment>
+                </field>
+                <field id="is_shoprunner_eligible" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Is Shop Runner Eligible</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Attributes\Boolean</source_model>                  
+                    <comment>Is Shop Runner Eligible</comment>
+                </field>
+                <field id="final_sale_date" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Final Sale Date</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Attributes\Date</source_model>                  
+                    <comment>Final Sale Date</comment>
+                </field>
+                <field id="is_final_sale" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Is Final Sale</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Attributes\Boolean</source_model>                  
+                    <comment>Is Final Sale</comment>
+                </field>
+                <field id="item_promise_date" translate="label" type="select" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Item Promise Date</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Attributes\Date</source_model>                  
+                    <comment>Item Promise Date</comment>
+                </field>                
+                <field id="dimuom" translate="label" type="select" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Dimension - Unit of Measurement</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Uom\Dimension</source_model>                  
+                    <comment>Dimension - Unit of Measurement</comment>
+                </field>
+                <field id="length" translate="label" type="select" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Dimension - Length</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Attributes</source_model>                  
+                    <comment>Dimension - Length</comment>
+                </field>
+                <field id="width" translate="label" type="select" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Dimension - Width</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Attributes</source_model>                  
+                    <comment>Dimension - Width</comment>
+                </field>
+                <field id="height" translate="label" type="select" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Dimension - Height</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Attributes</source_model>                  
+                    <comment>Dimension - Height</comment>
+                </field>
+                <field id="weight_uom" translate="label" type="select" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Weight - Unit Of Measurement</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Uom\Weight</source_model>                  
+                    <comment>Weight - Unit Of Measurement</comment>
+                </field>
+                <field id="ship_source" translate="label" type="select" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Ship Source</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Attributes</source_model>                  
+                    <comment>Shipment Source</comment>
+                </field>
+                <field id="additional_attrs" translate="label" type="multiselect" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Additional Custom Attributes</label>
+                    <source_model>Narvar\Connect\Model\System\Config\Source\Attributes</source_model>                  
+                    <comment>Additional Custom Attributes</comment>
+                </field>
+            </group>
+            <group id="activation" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Module Activation Information</label>
+                <field id="enable" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Module Activation Status</label>
+                    <frontend_model>Narvar\Connect\Block\Adminhtml\System\Config\Form\Renderer\ReadOnly</frontend_model>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                    <comment>Module Activation Status</comment>
+                </field>
+                <field id="activation_date" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Module Activated Date</label>
+                    <frontend_model>Narvar\Connect\Block\Adminhtml\System\Config\Form\Renderer\Activation\Date</frontend_model>
+                    <comment>Module Activated Date</comment>
+                    <depends>
+                        <field id="narvar_connect/general/enable">1</field>
+                    </depends>
+                </field>
+            </group>
+            <group id="brand_group" translate="label" type="text" sortOrder="70" showInDefault="0" showInWebsite="0" showInStore="1">
+                <label>Store Brand</label>
+                <field id="brand" translate="label" type="text" sortOrder="20" showInDefault="0" showInWebsite="0" showInStore="1">
+                    <label>Store Brand</label>
+                    <frontend_model>Narvar\Connect\Block\Adminhtml\System\Config\Form\Renderer\Brand\Brand</frontend_model>
+                    <validate>required-entry</validate>
+                    <comment>Unique store ID</comment>
+                </field>
+            </group>
+            <group id="log" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Log</label>
+                <field id="debug_mode" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Debug Mode</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+            </group>
+        </section>            
+    </system>
+</config>

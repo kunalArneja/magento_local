@@ -1,0 +1,30 @@
+version: '3'
+services:
+  magento-docker-demo:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: magento-narvar
+    container_name: magento-narvar
+    environment:
+      XDEBUG_CONFIG: remote_host=host.docker.internal remote_port=9000 remote_enable=1
+    ports:
+      - '80:80'
+    links:
+      - db
+    env_file:
+      - env
+  db:
+    image: mysql:5.6.23
+    volumes:
+      - db-data:/var/lib/mysql/data
+    env_file:
+      - env
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8580:80"
+    links:
+      - db     
+volumes:
+  db-data: 
