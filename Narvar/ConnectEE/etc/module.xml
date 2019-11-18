@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Module Setup Configuration
+ *
+ * @category    Narvar
+ * @package     Narvar_ConnectEE
+ *
+ * @author      premkumarsankar premkumar.sankar@aspiresys.com
+ * @copyright   Copyright (c) 2012-2019 Narvar Inc
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Narvar_ConnectEE" setup_version="0.1.9" schema_version="0.1.9" />
+</config>

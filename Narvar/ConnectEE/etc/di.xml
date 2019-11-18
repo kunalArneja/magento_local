@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- 
+/**
+ * Dependency Injection Configuration
+ *
+ * @category    Narvar
+ * @package     Narvar_ConnectEE
+ *
+ * @author      premkumarsankar premkumar.sankar@aspiresys.com
+ * @copyright   Copyright (c) 2012-2019 Narvar Inc
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Config\Model\Config">
+        <plugin name="narvar_handshake_plugin" type="Narvar\ConnectEE\Plugin\System\Config\Handshake" sortOrder="1" />
+    </type>
+    <type name="Magento\Sales\Model\Order">
+        <plugin name="narvar_order_plugin" type="Narvar\ConnectEE\Plugin\Sales\Order" sortOrder="1" />
+    </type>
+    <type name="Magento\Sales\Model\Order\Shipment">
+        <plugin name="narvar_shipment_plugin" type="Narvar\ConnectEE\Plugin\Sales\Order\Shipment" sortOrder="1" />
+    </type>
+    <type name="Magento\Sales\Model\Order\ShipmentRepository">
+        <plugin name="narvar_shipment_repository_plugin" type="Narvar\ConnectEE\Plugin\Sales\Order\ShipmentRepository" sortOrder="1" />
+    </type>
+    <type name="Magento\Sales\Model\Order\Invoice">
+        <plugin name="narvar_invoice_plugin" type="Narvar\ConnectEE\Plugin\Sales\Order\Invoice" sortOrder="1" />
+    </type>
+    <type name="Magento\Rma\Model\Rma">
+        <plugin name="narvar_rma_plugin" type="Narvar\ConnectEE\Plugin\Rma\Rma" sortOrder="1" />
+    </type>
+
+    <preference for="Narvar\ConnectEE\Api\ReturnsManagementInterface" type="Narvar\ConnectEE\Model\Service\ReturnsManagement" />
+    <preference for="Narvar\ConnectEE\Api\Data\ReturnsItemsInterface" type="Narvar\ConnectEE\Model\Returns\Items" />    
+    <preference for="Narvar\ConnectEE\Model\Returns\ProcessInterface" type="Narvar\ConnectEE\Model\Returns\Community" />
+    <preference for="Narvar\ConnectEE\Model\Returns\ProcessInterface" type="Narvar\ConnectEE\Model\Returns\Enterprise" />
+                
+    <virtualType name="AuditLogGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Narvar\ConnectEE\Model\Resource\Audit\Log\Collection
+            </argument>
+            <argument name="filterPool" xsi:type="object" shared="false">AuditLogGridFilterPool</argument>
+        </arguments>
+    </virtualType>
+    
+    <virtualType name="AuditLogGridFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\FilterPool">
+        <arguments>
+            <argument name="appliers" xsi:type="array">
+                <item name="regular" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\RegularFilter</item>
+                <item name="fulltext" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\FulltextFilter</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="narvar_connectee_audit_log_listing_data_source" xsi:type="string">Narvar\ConnectEE\Model\ResourceModel\Grid\Audit\Log\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    
+    <virtualType name="Narvar\ConnectEE\Model\ResourceModel\Grid\Audit\Log\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">narvar_audit_log</argument>
+            <argument name="resourceModel" xsi:type="string">Narvar\ConnectEE\Model\ResourceModel\Audit\Log</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Narvar\ConnectEE\Model\Logger\Handler">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <type name="Narvar\ConnectEE\Model\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">narvarLogger</argument>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">Narvar\ConnectEE\Model\Logger\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="narvar_connect_install_data" xsi:type="object">Narvar\ConnectEE\Console\Command\InstallData</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
