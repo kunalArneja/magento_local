@@ -1,0 +1,272 @@
+[2019-11-18 17:57:20] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+Kunal EntityType: order
+Kunal Action: create
+Kunal Slug: orders/
+Kunal Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","order_date":"2019-11-19T06:57:20Z","status":"","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":1,"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":350,"payments":[],"tax_amount":23.1,"tax_rate":23.1,"shipping_handling":45,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags"],"description":"","discount_amount":6.8,"discount_percent":20,"line_number":1,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"18","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb01-blue-0.jpg","item_url":"http:\/\/local.magento\/index.php\/joust-duffle-bag.html","name":"Joust Duffle Bag","sku":"24-MB01","quantity":5,"unit_price":27.2,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"attributes":{"color":"Black","color_id":"49","size":"","size_id":"","style":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":"","is_final_sale":false},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"19","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-29-Purple","quantity":4,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"attributes":{"color":"Purple","color_id":"57","size":"29","size_id":"173","style":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":"","is_final_sale":false}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Validated: true
+ [] []
+[2019-11-18 17:57:20] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::callApiWithRetry
+Kunal RequestData: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","order_date":"2019-11-19T06:57:20Z","status":"","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":1,"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":350,"payments":[],"tax_amount":23.1,"tax_rate":23.1,"shipping_handling":45,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags"],"description":"","discount_amount":6.8,"discount_percent":20,"line_number":1,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"18","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb01-blue-0.jpg","item_url":"http:\/\/local.magento\/index.php\/joust-duffle-bag.html","name":"Joust Duffle Bag","sku":"24-MB01","quantity":5,"unit_price":27.2,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"attributes":{"color":"Black","color_id":"49","size":"","size_id":"","style":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":"","is_final_sale":false},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"19","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-29-Purple","quantity":4,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"attributes":{"color":"Purple","color_id":"57","size":"29","size_id":"173","style":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":"","is_final_sale":false}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Action: create
+Kunal Slug: orders/
+ [] []
+[2019-11-18 17:57:20] narvarLogger.INFO: Narvar\Connect\Helper\Connector::setBasicAuthAccount
+Data: Array
+(
+    [storeId] => 1
+)
+User: ba5cb26ab8234d0aa835aae27b90ee91
+Password: 7f0a1fcf707b4203b01f2739ebed11fc
+ [] []
+[2019-11-18 17:57:20] narvarLogger.INFO: Narvar\Connect\Helper\Connector::post
+URL: https://ws.narvar.qa/api/v1/orders/
+ [] []
+[2019-11-18 17:57:22] narvarLogger.INFO: Narvar\Connect\Helper\Connector::responseHandling
+ResponseCode: 200
+ResponseMessage: OK
+ [] []
+[2019-11-18 17:57:22] narvarLogger.INFO: KUNAL EntityType: ENT_TYPE_ORDER
+KUNAL Data:. {"order":{},"shipment":null,"invoice":null}
+ [] []
+
+
+[2019-11-18 17:58:30] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+Kunal EntityType: invoice
+Kunal Action: create
+Kunal Slug: orders/
+Kunal Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","order_date":"2019-11-19T06:57:20Z","status":"ORDERED","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":350,"payments":[],"tax_amount":23.1,"tax_rate":23.1,"shipping_handling":45,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags"],"description":"","discount_amount":6.8,"discount_percent":20,"line_number":1,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"18","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb01-blue-0.jpg","item_url":"http:\/\/local.magento\/index.php\/joust-duffle-bag.html","name":"Joust Duffle Bag","sku":"24-MB01","quantity":5,"unit_price":27.2,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"19","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-purple_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-29-Purple","quantity":4,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Validated: true
+ [] []
+[2019-11-18 17:58:30] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::callApiWithRetry
+Kunal RequestData: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","order_date":"2019-11-19T06:57:20Z","status":"ORDERED","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":350,"payments":[],"tax_amount":23.1,"tax_rate":23.1,"shipping_handling":45,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags"],"description":"","discount_amount":6.8,"discount_percent":20,"line_number":1,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"18","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb01-blue-0.jpg","item_url":"http:\/\/local.magento\/index.php\/joust-duffle-bag.html","name":"Joust Duffle Bag","sku":"24-MB01","quantity":5,"unit_price":27.2,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"19","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-purple_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-29-Purple","quantity":4,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Action: create
+Kunal Slug: orders/
+ [] []
+[2019-11-18 17:58:30] narvarLogger.INFO: Narvar\Connect\Helper\Connector::setBasicAuthAccount
+Data: Array
+(
+    [storeId] => 1
+)
+User: ba5cb26ab8234d0aa835aae27b90ee91
+Password: 7f0a1fcf707b4203b01f2739ebed11fc
+ [] []
+[2019-11-18 17:58:30] narvarLogger.INFO: Narvar\Connect\Helper\Connector::post
+URL: https://ws.narvar.qa/api/v1/orders/
+ [] []
+[2019-11-18 17:58:32] narvarLogger.INFO: Narvar\Connect\Helper\Connector::responseHandling
+ResponseCode: 200
+ResponseMessage: OK
+ [] []
+[2019-11-18 17:58:32] narvarLogger.INFO: KUNAL EntityType: ENT_TYPE_INVOICE
+KUNAL Data:. {"order":{},"shipment":null,"invoice":{}}
+ [] []
+
+
+[2019-11-18 17:58:32] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+Kunal EntityType: order
+Kunal Action: create
+Kunal Slug: orders/
+Kunal Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","order_date":"2019-11-19T06:57:20Z","status":"","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":350,"payments":[],"tax_amount":23.1,"tax_rate":23.1,"shipping_handling":45,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags"],"description":"","discount_amount":6.8,"discount_percent":20,"line_number":1,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"18","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb01-blue-0.jpg","item_url":"http:\/\/local.magento\/index.php\/joust-duffle-bag.html","name":"Joust Duffle Bag","sku":"24-MB01","quantity":5,"unit_price":27.2,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"19","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-29-Purple","quantity":4,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Validated: true
+ [] []
+[2019-11-18 17:58:32] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::callApiWithRetry
+Kunal RequestData: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","order_date":"2019-11-19T06:57:20Z","status":"","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":350,"payments":[],"tax_amount":23.1,"tax_rate":23.1,"shipping_handling":45,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags"],"description":"","discount_amount":6.8,"discount_percent":20,"line_number":1,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"18","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb01-blue-0.jpg","item_url":"http:\/\/local.magento\/index.php\/joust-duffle-bag.html","name":"Joust Duffle Bag","sku":"24-MB01","quantity":5,"unit_price":27.2,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"19","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-29-Purple","quantity":4,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Action: create
+Kunal Slug: orders/
+ [] []
+[2019-11-18 17:58:32] narvarLogger.INFO: Narvar\Connect\Helper\Connector::setBasicAuthAccount
+Data: Array
+(
+    [storeId] => 1
+)
+User: ba5cb26ab8234d0aa835aae27b90ee91
+Password: 7f0a1fcf707b4203b01f2739ebed11fc
+ [] []
+[2019-11-18 17:58:32] narvarLogger.INFO: Narvar\Connect\Helper\Connector::post
+URL: https://ws.narvar.qa/api/v1/orders/
+ [] []
+[2019-11-18 17:58:34] narvarLogger.INFO: Narvar\Connect\Helper\Connector::responseHandling
+ResponseCode: 200
+ResponseMessage: OK
+ [] []
+[2019-11-18 17:58:34] narvarLogger.INFO: KUNAL EntityType: ENT_TYPE_ORDER
+KUNAL Data:. {"order":{},"shipment":null,"invoice":null}
+ [] []
+
+
+[2019-11-18 17:58:34] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+Kunal EntityType: order
+Kunal Action: create
+Kunal Slug: orders/
+Kunal Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","order_date":"2019-11-19T06:57:20Z","status":"","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":350,"payments":[],"tax_amount":23.1,"tax_rate":23.1,"shipping_handling":45,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags"],"description":"","discount_amount":6.8,"discount_percent":20,"line_number":1,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"18","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb01-blue-0.jpg","item_url":"http:\/\/local.magento\/index.php\/joust-duffle-bag.html","name":"Joust Duffle Bag","sku":"24-MB01","quantity":5,"unit_price":27.2,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"19","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-29-Purple","quantity":4,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Validated: false
+ [] []
+[2019-11-18 17:58:34] narvarLogger.INFO: KUNAL EntityType: ENT_TYPE_ORDER
+KUNAL Data:. {"order":{},"shipment":null,"invoice":null}
+ [] []
+
+
+
+[2019-11-18 17:59:33] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::transformShipment
+EntityType: shipment
+Shipment has not any tracks
+ [] []
+[2019-11-18 17:59:33] narvarLogger.INFO: KUNAL EntityType: ENT_TYPE_SHIPMENT
+KUNAL Data:. {"order":{},"shipment":{},"invoice":null}
+ [] []
+
+
+[2019-11-18 17:59:33] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+Kunal EntityType: order
+Kunal Action: create
+Kunal Slug: orders/
+Kunal Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","order_date":"2019-11-19T06:57:20Z","status":"PARTIAL","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":350,"payments":[],"tax_amount":23.1,"tax_rate":23.1,"shipping_handling":45,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags"],"description":"","discount_amount":6.8,"discount_percent":20,"line_number":1,"fulfillment_status":"PARTIAL","is_gift":false,"item_id":"18","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb01-blue-0.jpg","item_url":"http:\/\/local.magento\/index.php\/joust-duffle-bag.html","name":"Joust Duffle Bag","sku":"24-MB01","quantity":5,"unit_price":27.2,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"19","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-29-Purple","quantity":4,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Validated: true
+ [] []
+[2019-11-18 17:59:33] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::callApiWithRetry
+Kunal RequestData: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","order_date":"2019-11-19T06:57:20Z","status":"PARTIAL","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":350,"payments":[],"tax_amount":23.1,"tax_rate":23.1,"shipping_handling":45,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags"],"description":"","discount_amount":6.8,"discount_percent":20,"line_number":1,"fulfillment_status":"PARTIAL","is_gift":false,"item_id":"18","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb01-blue-0.jpg","item_url":"http:\/\/local.magento\/index.php\/joust-duffle-bag.html","name":"Joust Duffle Bag","sku":"24-MB01","quantity":5,"unit_price":27.2,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"19","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-29-Purple","quantity":4,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Action: create
+Kunal Slug: orders/
+ [] []
+[2019-11-18 17:59:33] narvarLogger.INFO: Narvar\Connect\Helper\Connector::setBasicAuthAccount
+Data: Array
+(
+    [storeId] => 1
+)
+User: ba5cb26ab8234d0aa835aae27b90ee91
+Password: 7f0a1fcf707b4203b01f2739ebed11fc
+ [] []
+[2019-11-18 17:59:33] narvarLogger.INFO: Narvar\Connect\Helper\Connector::post
+URL: https://ws.narvar.qa/api/v1/orders/
+ [] []
+[2019-11-18 17:59:34] narvarLogger.INFO: Narvar\Connect\Helper\Connector::responseHandling
+ResponseCode: 200
+ResponseMessage: OK
+ [] []
+[2019-11-18 17:59:34] narvarLogger.INFO: KUNAL EntityType: ENT_TYPE_ORDER
+KUNAL Data:. {"order":{},"shipment":null,"invoice":null}
+ [] []
+
+
+[2019-11-18 17:59:58] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+Kunal EntityType: shipment
+Kunal Action: update
+Kunal Slug: orders/000000007/shipments/
+Kunal Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","shipments":[{"ship_method":"Flat Rate - Fixed","carrier":"FEDEX","carrier_service":"","ship_source":"","items_info":[{"sku":"WSH12-29-Purple","quantity":4}],"ship_date":"2019-11-19T06:59:58Z","ship_discount":0,"ship_tax":0,"ship_total":45,"tracking_number":"87687","shipped_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}}],"status":"SPLIT_SHIP-COMPLETE","attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Validated: true
+ [] []
+[2019-11-18 17:59:58] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::callApiWithRetry
+Kunal RequestData: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","shipments":[{"ship_method":"Flat Rate - Fixed","carrier":"FEDEX","carrier_service":"","ship_source":"","items_info":[{"sku":"WSH12-29-Purple","quantity":4}],"ship_date":"2019-11-19T06:59:58Z","ship_discount":0,"ship_tax":0,"ship_total":45,"tracking_number":"87687","shipped_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}}],"status":"SPLIT_SHIP-COMPLETE","attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Action: update
+Kunal Slug: orders/000000007/shipments/
+ [] []
+[2019-11-18 17:59:58] narvarLogger.INFO: Narvar\Connect\Helper\Connector::setBasicAuthAccount
+Data: Array
+(
+    [storeId] => 1
+)
+User: ba5cb26ab8234d0aa835aae27b90ee91
+Password: 7f0a1fcf707b4203b01f2739ebed11fc
+ [] []
+[2019-11-18 18:00:00] narvarLogger.INFO: Narvar\Connect\Helper\Connector::responseHandling
+ResponseCode: 200
+ResponseMessage: OK
+ [] []
+[2019-11-18 18:00:00] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+Kunal EntityType: order
+Kunal Action: create
+Kunal Slug: orders/
+Kunal Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","order_date":"2019-11-19T06:57:20Z","status":"PARTIAL","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":350,"payments":[],"tax_amount":23.1,"tax_rate":23.1,"shipping_handling":45,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags"],"description":"","discount_amount":6.8,"discount_percent":20,"line_number":1,"fulfillment_status":"PARTIAL","is_gift":false,"item_id":"18","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb01-blue-0.jpg","item_url":"http:\/\/local.magento\/index.php\/joust-duffle-bag.html","name":"Joust Duffle Bag","sku":"24-MB01","quantity":5,"unit_price":27.2,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"19","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-29-Purple","quantity":4,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Validated: true
+ [] []
+[2019-11-18 18:00:00] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::callApiWithRetry
+Kunal RequestData: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","order_date":"2019-11-19T06:57:20Z","status":"PARTIAL","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":350,"payments":[],"tax_amount":23.1,"tax_rate":23.1,"shipping_handling":45,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags"],"description":"","discount_amount":6.8,"discount_percent":20,"line_number":1,"fulfillment_status":"PARTIAL","is_gift":false,"item_id":"18","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb01-blue-0.jpg","item_url":"http:\/\/local.magento\/index.php\/joust-duffle-bag.html","name":"Joust Duffle Bag","sku":"24-MB01","quantity":5,"unit_price":27.2,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"19","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-29-Purple","quantity":4,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Action: create
+Kunal Slug: orders/
+ [] []
+[2019-11-18 18:00:00] narvarLogger.INFO: Narvar\Connect\Helper\Connector::setBasicAuthAccount
+Data: Array
+(
+    [storeId] => 1
+)
+User: ba5cb26ab8234d0aa835aae27b90ee91
+Password: 7f0a1fcf707b4203b01f2739ebed11fc
+ [] []
+[2019-11-18 18:00:00] narvarLogger.INFO: Narvar\Connect\Helper\Connector::post
+URL: https://ws.narvar.qa/api/v1/orders/
+ [] []
+[2019-11-18 18:00:01] narvarLogger.INFO: Narvar\Connect\Helper\Connector::responseHandling
+ResponseCode: 200
+ResponseMessage: OK
+ [] []
+[2019-11-18 18:00:01] narvarLogger.INFO: KUNAL EntityType: ENT_TYPE_ORDER
+KUNAL Data:. {"order":{},"shipment":null,"invoice":null}
+ [] []
+[2019-11-18 18:00:01] narvarLogger.INFO: KUNAL EntityType: ENT_TYPE_SHIPMENT
+KUNAL Data:. {"order":{},"shipment":{},"invoice":null}
+ [] []
+
+
+[2019-11-18 18:00:01] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+Kunal EntityType: order
+Kunal Action: create
+Kunal Slug: orders/
+Kunal Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","order_date":"2019-11-19T06:57:20Z","status":"PARTIAL","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":350,"payments":[],"tax_amount":23.1,"tax_rate":23.1,"shipping_handling":45,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags"],"description":"","discount_amount":6.8,"discount_percent":20,"line_number":1,"fulfillment_status":"PARTIAL","is_gift":false,"item_id":"18","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb01-blue-0.jpg","item_url":"http:\/\/local.magento\/index.php\/joust-duffle-bag.html","name":"Joust Duffle Bag","sku":"24-MB01","quantity":5,"unit_price":27.2,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"19","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-29-Purple","quantity":4,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Validated: false
+ [] []
+[2019-11-18 18:00:01] narvarLogger.INFO: KUNAL EntityType: ENT_TYPE_ORDER
+KUNAL Data:. {"order":{},"shipment":null,"invoice":null}
+ [] []
+
+
+[2019-11-18 18:00:10] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::transformShipment
+EntityType: shipment
+Shipment has not any tracks
+ [] []
+[2019-11-18 18:00:10] narvarLogger.INFO: KUNAL EntityType: ENT_TYPE_SHIPMENT
+KUNAL Data:. {"order":{},"shipment":{},"invoice":null}
+ [] []
+
+
+[2019-11-18 18:00:11] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+Kunal EntityType: order
+Kunal Action: create
+Kunal Slug: orders/
+Kunal Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","order_date":"2019-11-19T06:57:20Z","status":"SHIPPED","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":350,"payments":[],"tax_amount":23.1,"tax_rate":23.1,"shipping_handling":45,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags"],"description":"","discount_amount":6.8,"discount_percent":20,"line_number":1,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"18","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb01-blue-0.jpg","item_url":"http:\/\/local.magento\/index.php\/joust-duffle-bag.html","name":"Joust Duffle Bag","sku":"24-MB01","quantity":5,"unit_price":27.2,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"19","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-29-Purple","quantity":4,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Validated: true
+ [] []
+[2019-11-18 18:00:11] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::callApiWithRetry
+Kunal RequestData: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","order_date":"2019-11-19T06:57:20Z","status":"SHIPPED","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":350,"payments":[],"tax_amount":23.1,"tax_rate":23.1,"shipping_handling":45,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags"],"description":"","discount_amount":6.8,"discount_percent":20,"line_number":1,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"18","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb01-blue-0.jpg","item_url":"http:\/\/local.magento\/index.php\/joust-duffle-bag.html","name":"Joust Duffle Bag","sku":"24-MB01","quantity":5,"unit_price":27.2,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"19","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-29-Purple","quantity":4,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Action: create
+Kunal Slug: orders/
+ [] []
+[2019-11-18 18:00:11] narvarLogger.INFO: Narvar\Connect\Helper\Connector::setBasicAuthAccount
+Data: Array
+(
+    [storeId] => 1
+)
+User: ba5cb26ab8234d0aa835aae27b90ee91
+Password: 7f0a1fcf707b4203b01f2739ebed11fc
+ [] []
+[2019-11-18 18:00:11] narvarLogger.INFO: Narvar\Connect\Helper\Connector::post
+URL: https://ws.narvar.qa/api/v1/orders/
+ [] []
+[2019-11-18 18:00:12] narvarLogger.INFO: Narvar\Connect\Helper\Connector::responseHandling
+ResponseCode: 200
+ResponseMessage: OK
+ [] []
+[2019-11-18 18:00:12] narvarLogger.INFO: KUNAL EntityType: ENT_TYPE_ORDER
+KUNAL Data:. {"order":{},"shipment":null,"invoice":null}
+ [] []
+
+
+[2019-11-18 18:00:12] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+Kunal EntityType: order
+Kunal Action: create
+Kunal Slug: orders/
+Kunal Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000007","order_date":"2019-11-19T06:57:20Z","status":"SHIPPED","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":350,"payments":[],"tax_amount":23.1,"tax_rate":23.1,"shipping_handling":45,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags"],"description":"","discount_amount":6.8,"discount_percent":20,"line_number":1,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"18","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb01-blue-0.jpg","item_url":"http:\/\/local.magento\/index.php\/joust-duffle-bag.html","name":"Joust Duffle Bag","sku":"24-MB01","quantity":5,"unit_price":27.2,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"19","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-29-Purple","quantity":4,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Kunal Validated: false
+ [] []
+[2019-11-18 18:00:12] narvarLogger.INFO: KUNAL EntityType: ENT_TYPE_ORDER
+KUNAL Data:. {"order":{},"shipment":null,"invoice":null}
+ [] []

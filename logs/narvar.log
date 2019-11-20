@@ -1,0 +1,48 @@
+[2019-11-18 12:05:27] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+EntityType: shipment
+Action: update
+Slug: orders/000000005/shipments/
+Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000005","shipments":[{"ship_method":"Flat Rate - Fixed","carrier":"DHL","carrier_service":"","ship_source":"","items_info":[{"sku":"WSH12-30-Purple","quantity":1}],"ship_date":"2019-11-19T01:05:27Z","ship_discount":0,"ship_tax":0,"ship_total":50,"tracking_number":"87436785","shipped_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}}],"status":"SPLIT_SHIP-INIT","attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Validated: true
+ [] []
+[2019-11-18 12:05:27] narvarLogger.INFO: Narvar\Connect\Helper\Connector::setBasicAuthAccount
+Data: Array
+(
+    [storeId] => 1
+)
+User: ba5cb26ab8234d0aa835aae27b90ee91
+Password: 7f0a1fcf707b4203b01f2739ebed11fc
+ [] []
+[2019-11-18 12:05:29] narvarLogger.INFO: Narvar\Connect\Helper\Connector::responseHandling
+ResponseCode: 200
+ResponseMessage: OK
+ [] []
+[2019-11-18 12:05:31] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+EntityType: order
+Action: create
+Slug: orders/
+Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000005","order_date":"2019-11-19T00:17:27Z","status":"PARTIAL","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":450,"payments":[],"tax_amount":29.7,"tax_rate":29.7,"shipping_handling":50,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":1,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"11","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-purple_main.jpg","item_url":"http:\/\/local.magento\/index.php\/admin\/catalog\/product\/view\/id\/2005\/s\/erika-running-short-32-purple\/key\/83406c361c8a654894e7e64fa0bdc35792152fac301629a0e9679a447f7f30b1\/","name":"Erika Running Short-32-Purple","sku":"WSH12-32-Purple","quantity":2,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"PARTIAL","is_gift":false,"item_id":"12","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-red_main.jpg","item_url":"http:\/\/local.magento\/index.php\/admin\/catalog\/product\/view\/id\/2006\/s\/erika-running-short-32-red\/key\/83406c361c8a654894e7e64fa0bdc35792152fac301629a0e9679a447f7f30b1\/","name":"Erika Running Short-32-Red","sku":"WSH12-32-Red","quantity":3,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":3,"fulfillment_status":"PARTIAL","is_gift":false,"item_id":"13","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-30-Purple","quantity":5,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Validated: true
+ [] []
+[2019-11-18 12:05:31] narvarLogger.INFO: Narvar\Connect\Helper\Connector::setBasicAuthAccount
+Data: Array
+(
+    [storeId] => 1
+)
+User: ba5cb26ab8234d0aa835aae27b90ee91
+Password: 7f0a1fcf707b4203b01f2739ebed11fc
+ [] []
+[2019-11-18 12:05:31] narvarLogger.INFO: Narvar\Connect\Helper\Connector::post
+URL: https://ws.narvar.qa/api/v1/orders/
+ [] []
+[2019-11-18 12:05:33] narvarLogger.INFO: Narvar\Connect\Helper\Connector::responseHandling
+ResponseCode: 200
+ResponseMessage: OK
+ [] []
+[2019-11-18 12:05:34] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+EntityType: order
+Action: create
+Slug: orders/
+Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000005","order_date":"2019-11-19T00:17:27Z","status":"PARTIAL","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":450,"payments":[],"tax_amount":29.7,"tax_rate":29.7,"shipping_handling":50,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":1,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"11","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-purple_main.jpg","item_url":"http:\/\/local.magento\/index.php\/admin\/catalog\/product\/view\/id\/2005\/s\/erika-running-short-32-purple\/key\/83406c361c8a654894e7e64fa0bdc35792152fac301629a0e9679a447f7f30b1\/","name":"Erika Running Short-32-Purple","sku":"WSH12-32-Purple","quantity":2,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"PARTIAL","is_gift":false,"item_id":"12","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-red_main.jpg","item_url":"http:\/\/local.magento\/index.php\/admin\/catalog\/product\/view\/id\/2006\/s\/erika-running-short-32-red\/key\/83406c361c8a654894e7e64fa0bdc35792152fac301629a0e9679a447f7f30b1\/","name":"Erika Running Short-32-Red","sku":"WSH12-32-Red","quantity":3,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":3,"fulfillment_status":"PARTIAL","is_gift":false,"item_id":"13","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-30-Purple","quantity":5,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Validated: false
+ [] []

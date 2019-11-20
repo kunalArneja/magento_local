@@ -1,0 +1,150 @@
+[2019-11-19 13:06:11] narvarLogger.INFO: MAGENTO SOURCE: plugin
+ [] []
+[2019-11-19 13:06:11] narvarLogger.INFO: MAGENTO START EntityType: ENT_TYPE_ORDER
+ [] []
+[2019-11-19 13:06:11] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+Magento EntityType: order
+Magento Action: create
+Magento Slug: orders/
+Magento Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000019","order_date":"2019-11-20T02:06:11Z","status":"","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":1,"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":385,"payments":[],"tax_amount":28.05,"tax_rate":28.05,"shipping_handling":0,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags","Collections"],"description":"","discount_amount":0,"discount_percent":0,"line_number":1,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"54","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb04-black-0.jpg","item_url":"http:\/\/local.magento\/index.php\/strive-shoulder-pack.html","name":"Strive Shoulder Pack","sku":"24-MB04","quantity":5,"unit_price":32,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"attributes":{"color":"Black","color_id":"49","size":"","size_id":"","style":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":"","is_final_sale":false},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"55","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-32-Green","quantity":5,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"attributes":{"color":"Green","color_id":"53","size":"32","size_id":"176","style":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":"","is_final_sale":false}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Magento Validated: true
+ [] []
+[2019-11-19 13:06:11] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::callApiWithRetry
+Magento RequestData: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000019","order_date":"2019-11-20T02:06:11Z","status":"","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":1,"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":385,"payments":[],"tax_amount":28.05,"tax_rate":28.05,"shipping_handling":0,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags","Collections"],"description":"","discount_amount":0,"discount_percent":0,"line_number":1,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"54","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb04-black-0.jpg","item_url":"http:\/\/local.magento\/index.php\/strive-shoulder-pack.html","name":"Strive Shoulder Pack","sku":"24-MB04","quantity":5,"unit_price":32,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"attributes":{"color":"Black","color_id":"49","size":"","size_id":"","style":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":"","is_final_sale":false},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"55","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-32-Green","quantity":5,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"attributes":{"color":"Green","color_id":"53","size":"32","size_id":"176","style":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":"","is_final_sale":false}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Magento Action: create
+Magento Slug: orders/
+ [] []
+[2019-11-19 13:06:11] narvarLogger.INFO: Narvar\Connect\Helper\Connector::setBasicAuthAccount
+Data: Array
+(
+    [storeId] => 1
+)
+User: ba5cb26ab8234d0aa835aae27b90ee91
+Password: 7f0a1fcf707b4203b01f2739ebed11fc
+ [] []
+[2019-11-19 13:06:11] narvarLogger.INFO: Narvar\Connect\Helper\Connector::post
+URL: https://ws.narvar.qa/api/v1/orders/
+ [] []
+[2019-11-19 13:06:14] narvarLogger.INFO: Narvar\Connect\Helper\Connector::responseHandling
+ResponseCode: 200
+ResponseMessage: OK
+ [] []
+[2019-11-19 13:06:14] narvarLogger.INFO: MAGENTO END
+ [] []
+
+
+[2019-11-19 13:07:06] narvarLogger.INFO: MAGENTO SOURCE: plugin
+ [] []
+[2019-11-19 13:07:06] narvarLogger.INFO: MAGENTO START EntityType: ENT_TYPE_SHIPMENT
+ [] []
+[2019-11-19 13:07:06] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+Magento EntityType: shipment
+Magento Action: update
+Magento Slug: orders/000000019/shipments/
+Magento Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000019","shipments":[{"ship_method":"Best Way - Table Rate","carrier":"DHL","carrier_service":"","ship_source":"","items_info":[{"sku":"24-MB04","quantity":5},{"sku":"WSH12-32-Green","quantity":5}],"ship_date":"2019-11-20T02:07:06Z","ship_discount":0,"ship_tax":0,"ship_total":0,"tracking_number":"1234567898765","shipped_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}}],"status":"SPLIT_SHIP-COMPLETE","attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Magento Validated: true
+ [] []
+[2019-11-19 13:07:06] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::callApiWithRetry
+Magento RequestData: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000019","shipments":[{"ship_method":"Best Way - Table Rate","carrier":"DHL","carrier_service":"","ship_source":"","items_info":[{"sku":"24-MB04","quantity":5},{"sku":"WSH12-32-Green","quantity":5}],"ship_date":"2019-11-20T02:07:06Z","ship_discount":0,"ship_tax":0,"ship_total":0,"tracking_number":"1234567898765","shipped_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}}],"status":"SPLIT_SHIP-COMPLETE","attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Magento Action: update
+Magento Slug: orders/000000019/shipments/
+ [] []
+[2019-11-19 13:07:06] narvarLogger.INFO: Narvar\Connect\Helper\Connector::setBasicAuthAccount
+Data: Array
+(
+    [storeId] => 1
+)
+User: ba5cb26ab8234d0aa835aae27b90ee91
+Password: 7f0a1fcf707b4203b01f2739ebed11fc
+ [] []
+[2019-11-19 13:07:09] narvarLogger.INFO: Narvar\Connect\Helper\Connector::responseHandling
+ResponseCode: 200
+ResponseMessage: OK
+ [] []
+[2019-11-19 13:07:09] narvarLogger.INFO: MAGENTO END
+ [] []
+
+
+[2019-11-19 13:07:09] narvarLogger.INFO: MAGENTO SOURCE: plugin
+ [] []
+[2019-11-19 13:07:09] narvarLogger.INFO: MAGENTO START EntityType: ENT_TYPE_ORDER
+ [] []
+[2019-11-19 13:07:09] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+Magento EntityType: order
+Magento Action: create
+Magento Slug: orders/
+Magento Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000019","order_date":"2019-11-20T02:06:11Z","status":"SHIPPED","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":385,"payments":[],"tax_amount":28.05,"tax_rate":28.05,"shipping_handling":0,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags","Collections"],"description":"","discount_amount":0,"discount_percent":0,"line_number":1,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"54","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb04-black-0.jpg","item_url":"http:\/\/local.magento\/index.php\/strive-shoulder-pack.html","name":"Strive Shoulder Pack","sku":"24-MB04","quantity":5,"unit_price":32,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"55","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-32-Green","quantity":5,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Magento Validated: true
+ [] []
+[2019-11-19 13:07:09] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::callApiWithRetry
+Magento RequestData: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000019","order_date":"2019-11-20T02:06:11Z","status":"SHIPPED","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":385,"payments":[],"tax_amount":28.05,"tax_rate":28.05,"shipping_handling":0,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags","Collections"],"description":"","discount_amount":0,"discount_percent":0,"line_number":1,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"54","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb04-black-0.jpg","item_url":"http:\/\/local.magento\/index.php\/strive-shoulder-pack.html","name":"Strive Shoulder Pack","sku":"24-MB04","quantity":5,"unit_price":32,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"55","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-32-Green","quantity":5,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Magento Action: create
+Magento Slug: orders/
+ [] []
+[2019-11-19 13:07:09] narvarLogger.INFO: Narvar\Connect\Helper\Connector::setBasicAuthAccount
+Data: Array
+(
+    [storeId] => 1
+)
+User: ba5cb26ab8234d0aa835aae27b90ee91
+Password: 7f0a1fcf707b4203b01f2739ebed11fc
+ [] []
+[2019-11-19 13:07:09] narvarLogger.INFO: Narvar\Connect\Helper\Connector::post
+URL: https://ws.narvar.qa/api/v1/orders/
+ [] []
+[2019-11-19 13:07:13] narvarLogger.INFO: Narvar\Connect\Helper\Connector::responseHandling
+ResponseCode: 200
+ResponseMessage: OK
+ [] []
+[2019-11-19 13:07:13] narvarLogger.INFO: MAGENTO END
+ [] []
+
+
+[2019-11-19 13:07:24] narvarLogger.INFO: MAGENTO SOURCE: plugin
+ [] []
+[2019-11-19 13:07:24] narvarLogger.INFO: MAGENTO START EntityType: ENT_TYPE_INVOICE
+ [] []
+[2019-11-19 13:07:24] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+Magento EntityType: invoice
+Magento Action: create
+Magento Slug: orders/
+Magento Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000019","order_date":"2019-11-20T02:06:11Z","status":"ORDERED","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":385,"payments":[],"tax_amount":28.05,"tax_rate":28.05,"shipping_handling":0,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags","Collections"],"description":"","discount_amount":0,"discount_percent":0,"line_number":1,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"54","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb04-black-0.jpg","item_url":"http:\/\/local.magento\/index.php\/strive-shoulder-pack.html","name":"Strive Shoulder Pack","sku":"24-MB04","quantity":5,"unit_price":32,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"55","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-32-Green","quantity":5,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Magento Validated: true
+ [] []
+[2019-11-19 13:07:24] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::callApiWithRetry
+Magento RequestData: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000019","order_date":"2019-11-20T02:06:11Z","status":"ORDERED","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":385,"payments":[],"tax_amount":28.05,"tax_rate":28.05,"shipping_handling":0,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags","Collections"],"description":"","discount_amount":0,"discount_percent":0,"line_number":1,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"54","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb04-black-0.jpg","item_url":"http:\/\/local.magento\/index.php\/strive-shoulder-pack.html","name":"Strive Shoulder Pack","sku":"24-MB04","quantity":5,"unit_price":32,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"NOT_SHIPPED","is_gift":false,"item_id":"55","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-32-Green","quantity":5,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Magento Action: create
+Magento Slug: orders/
+ [] []
+[2019-11-19 13:07:24] narvarLogger.INFO: Narvar\Connect\Helper\Connector::setBasicAuthAccount
+Data: Array
+(
+    [storeId] => 1
+)
+User: ba5cb26ab8234d0aa835aae27b90ee91
+Password: 7f0a1fcf707b4203b01f2739ebed11fc
+ [] []
+[2019-11-19 13:07:24] narvarLogger.INFO: Narvar\Connect\Helper\Connector::post
+URL: https://ws.narvar.qa/api/v1/orders/
+ [] []
+[2019-11-19 13:07:27] narvarLogger.INFO: Narvar\Connect\Helper\Connector::responseHandling
+ResponseCode: 200
+ResponseMessage: OK
+ [] []
+[2019-11-19 13:07:27] narvarLogger.INFO: MAGENTO END
+ [] []
+
+ 
+[2019-11-19 13:07:27] narvarLogger.INFO: MAGENTO SOURCE: plugin
+ [] []
+[2019-11-19 13:07:27] narvarLogger.INFO: MAGENTO START EntityType: ENT_TYPE_ORDER
+ [] []
+[2019-11-19 13:07:27] narvarLogger.INFO: Narvar\Connect\Model\Data\Transformer::processTransform
+Magento EntityType: order
+Magento Action: create
+Magento Slug: orders/
+Magento Request Data: {"order_info":{"brand":"default","locale":"en_GB","order_number":"000000019","order_date":"2019-11-20T02:06:11Z","status":"SHIPPED","currency_code":"NZD","is_shoprunner_eligible":false,"customer":{"customer_id":"1","email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","customer_type":"General","notification_pref":[],"address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}},"billing":{"amount":385,"payments":[],"tax_amount":28.05,"tax_rate":28.05,"shipping_handling":0,"billed_to":{"email":"roni_cost@example.com","first_name":"Veronica","last_name":"Costello","phone":"(555) 229-3326","address":{"city":"Calder","country":"United States","state":"Michigan","street_1":"6146 Honey Bluff Parkway","street_2":"","zip":"49628-7978"}}},"order_items":[{"categories":["Gear","Bags","Collections"],"description":"","discount_amount":0,"discount_percent":0,"line_number":1,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"54","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/m\/b\/mb04-black-0.jpg","item_url":"http:\/\/local.magento\/index.php\/strive-shoulder-pack.html","name":"Strive Shoulder Pack","sku":"24-MB04","quantity":5,"unit_price":32,"dimension":{"length":0,"width":0,"height":0,"weight":0,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""},{"categories":["Default Category","Shorts","Erin Recommends"],"description":"","discount_amount":9,"discount_percent":20,"line_number":2,"fulfillment_status":"SHIPPED","is_gift":false,"item_id":"55","item_image":"http:\/\/local.magento\/pub\/media\/catalog\/product\/cache\/3ad8a51924f044e44aeff6143a8a9163\/w\/s\/wsh12-green_main.jpg","item_url":"http:\/\/local.magento\/index.php\/erika-running-short.html","name":"Erika Running Short","sku":"WSH12-32-Green","quantity":5,"unit_price":36,"dimension":{"length":0,"width":0,"height":0,"weight":1,"uom":"","weight_uom":""},"vendor":"","final_sale_date":"","is_backordered":false,"item_promise_date":""}],"attributes":{"checkout_brand":"magentokunaltest","checkout_language":"English","checkout_country":"US","checkout_locale":"en_GB"}}}
+Magento Validated: false
+ [] []
+[2019-11-19 13:07:27] narvarLogger.INFO: MAGENTO END
+ [] []
