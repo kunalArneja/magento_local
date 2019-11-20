@@ -1,7 +1,6 @@
 FROM quay.io/alexcheng1982/apache2-php7:7.1.24
 
-RUN pecl install -f xdebug \
-&& echo "zend_extension=$(find /usr/local/lib/php/extensions/ -name xdebug.so)" > /usr/local/etc/php/conf.d/xdebug.ini;
+RUN pecl install -f xdebug
 
 LABEL maintainer="alexcheng1982@gmail.com"
 LABEL php_version="7.1.24"
